@@ -7,6 +7,16 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
 ```
 
 hi allison!
+
+Hi Dani! 
+
+Here's a little ggplot graph, can you change the point colors to "blue"?
+```{r}
+ggplot(data = mtcars, aes(x = mpg, y = hp)) +
+  geom_point()
+```
+
