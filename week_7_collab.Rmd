@@ -17,6 +17,8 @@ Hi Dani!
 Here's a little ggplot graph, can you change the point colors to "blue"?
 ```{r}
 ggplot(data = mtcars, aes(x = mpg, y = hp)) +
-  geom_point()
+  geom_point(color="blue") +
+  labs(x= "MPG", y="Horse Power")
 ```
 
+What happens if we are working on this at the same time and we are bothing adding graphs to the same line. Will they override each other or will they both just appear?
